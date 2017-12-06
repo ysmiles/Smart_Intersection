@@ -34,7 +34,15 @@ def upload_file():
             if allowed_file(file.filename):
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-                return render_template('upload.html', entry=filename)
+                entry = []
+                entry.append(filename)
+                import subprocess
+                # result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
+                result = subprocess.run(['ls'], stdout=subprocess.PIPE)
+                result = result.stdout.decode('utf-8') 
+                entry.append(result)
+                # entry.append(result.replace('\n', '<br>'))
+                return render_template('upload.html', entry=entry)
                 # return redirect(url_for('uploaded_file', filename=filename))
             else:
                 flash('Wrong file!!!')
