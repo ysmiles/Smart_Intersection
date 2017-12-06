@@ -40,6 +40,7 @@ def upload_file():
                 # result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
                 result = subprocess.run(['ls'], stdout=subprocess.PIPE)
                 result = result.stdout.decode('utf-8') 
+                result = "Your car is Jaguar"
                 entry.append(result)
                 # entry.append(result.replace('\n', '<br>'))
                 return render_template('upload.html', entry=entry)
