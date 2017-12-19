@@ -10,7 +10,7 @@ Also thanks for Kalyani Kulkarni's work of video making.
 
 The report source file is this [Overleaf link](https://www.overleaf.com/read/sgbgwdfszgcb).
 
-Our group folder is shared with this [Google Drive Link](https://drive.google.com/drive/folders/0B9A0RzaktEI1WExDOU5PNUdOcUk?usp=sharing).
+Our group folder including several notes and videos, slides, etc. is shared with this [Google Drive Link](https://drive.google.com/drive/folders/0B9A0RzaktEI1WExDOU5PNUdOcUk?usp=sharing).
 Every one at SJSU can view it.
 
 Following is the brief introduction for web interface. Please refer to the folder [/inception220](https://github.com/ysmiles/Smart_Intersection/tree/master/inception220) for machine learning details.
