@@ -1,4 +1,4 @@
-# Smart_Intersection
+# Car brand recognition - smart intersection
 
 This is a machine learning project involving car detection, etc.
 The original motivation is from the idea of "Smart Intersection - Smart City".
