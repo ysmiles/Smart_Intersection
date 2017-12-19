@@ -38,9 +38,25 @@ def upload_file():
                 entry.append(filename)
                 import subprocess
                 # result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
-                result = subprocess.run(['ls'], stdout=subprocess.PIPE)
-                result = result.stdout.decode('utf-8') 
-                result = "Your car is Jaguar"
+                command1 = ['python3.5',
+                            'build_validation_image.py',
+                            '--filename=/home/huahandsome/Desktop/Git/shell_script/convert2tfrecord/theimage.jpg',
+                            '--label=4',
+                            '--text=jeep',
+                            '--output_directory=/home/huahandsome/Desktop/Git/shell_script/convert2tfrecord/']
+                command2 = ['bazel-bin/inception/flowers_eval',
+                            '--eval_dir=/share_folder/220Proj/car_brand_identify/car_eval',
+                            '--data_dir=/share_folder/220Proj/car_brand_identify/test_data',
+                            '--subset=validation',
+                            '--num_examples=1',
+                            '--checkpoint_dir=/share_folder/220Proj_bak/car_brand_identify/car_train',
+                            '--input_queue_memory_factor=1',
+                            '--run_once',
+                            '--batch_size=1']
+                result1 = subprocess.run(command1, stdout=subprocess.PIPE)
+                result = result1.stdout.decode('utf-8')
+                result2 = subprocess.run(command2, stdout=subprocess.PIPE)
+                result += result2.stdout.decode('utf-8')
                 entry.append(result)
                 # entry.append(result.replace('\n', '<br>'))
                 return render_template('upload.html', entry=entry)
