@@ -6,14 +6,20 @@ The original motivation is from the idea of "Smart Intersection - Smart City".
 *My contributions*: web interface; part of data preparing, training, video/slides/report making.
 
 Thanks for Shuai Hua's efforts to find good available data sets and taking care of main data processing work.
-Also thanks for Kalyani Kulkarni's work of video making.
+Also thanks for Kalyani Kulkarni's work of video making and helpful works on other parts of this project.
 
 The report source file is this [Overleaf link](https://www.overleaf.com/read/sgbgwdfszgcb).
 
 Our group folder including several notes and videos, slides, etc. is shared with this [Google Drive Link](https://drive.google.com/drive/folders/0B9A0RzaktEI1WExDOU5PNUdOcUk?usp=sharing).
 Every one at SJSU can view it.
 
-Following is the brief introduction for web interface. Please refer to the folder [/inception220](https://github.com/ysmiles/Smart_Intersection/tree/master/inception220) for machine learning details.
+## Machine Learning
+
+Please refer to the folder [/inception220](https://github.com/ysmiles/Smart_Intersection/tree/master/inception220) in this repository for machine learning details.
+
+## Web interface
+
+Following is the brief introduction for web interface. 
 
 The overall data flow of this app is as follow.
 
